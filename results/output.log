@@ -1,0 +1,20 @@
+
+Simulation Results:
+DUT RAN 1 broadcasted MIB: MIB(systemFrameNumber=000000, subCarrierSpacingCommon=scs15or60, ssb_SubcarrierOffset=0, dmrs_TypeA_Position=pos2, pdcch_ConfigSIB1=0, cellBarred=notBarred, intraFreqReselection=allowed, spare=0)
+DUT RAN 2 broadcasted MIB: MIB(systemFrameNumber=000000, subCarrierSpacingCommon=scs15or60, ssb_SubcarrierOffset=0, dmrs_TypeA_Position=pos2, pdcch_ConfigSIB1=0, cellBarred=notBarred, intraFreqReselection=allowed, spare=0)
+UE 1 received MIB
+UE 2 received MIB
+UE 3 received MIB
+UE 4 received MIB
+UE 5 received MIB
+Test execution completed.
+
+Simulation Results:
+DUT RAN 1 broadcasted MIB: MIB(systemFrameNumber=000000, subCarrierSpacingCommon=scs15or60, ssb_SubcarrierOffset=0, dmrs_TypeA_Position=pos2, pdcch_ConfigSIB1=0, cellBarred=notBarred, intraFreqReselection=allowed, spare=0)
+DUT RAN 2 broadcasted MIB: MIB(systemFrameNumber=000000, subCarrierSpacingCommon=scs15or60, ssb_SubcarrierOffset=0, dmrs_TypeA_Position=pos2, pdcch_ConfigSIB1=0, cellBarred=notBarred, intraFreqReselection=allowed, spare=0)
+UE 1 received MIB
+UE 2 received MIB
+UE 3 received MIB
+UE 4 received MIB
+UE 5 received MIB
+Test execution completed.

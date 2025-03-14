@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-14T17:30:59.539270" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Other Scenarios" source="C:\Users\Ramesh1\PycharmProjects\PythonProject2\RAN_TEST\Tests\test_other_scenarios.robot">
+<test id="s1-t1" name="Verify Custom MIB Reception" line="19">
+<kw name="Start Custom Call Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-14T17:30:59.641186" level="INFO">Starting custom test for call flow: custom</msg>
+<arg>Starting custom test for call flow: custom</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-14T17:30:59.640800" elapsed="0.000542"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-14T17:30:59.641924" level="INFO">Test will exit in 10 seconds.</msg>
+<arg>Test will exit in 10 seconds.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-14T17:30:59.641661" elapsed="0.000561"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-14T17:30:59.643345" level="FAIL">Variable '${SYSTEM_FRAME_NUMBER}' not found.</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>run_tests.py</arg>
+<arg>--call_flow</arg>
+<arg>custom</arg>
+<arg>--systemFrameNumber</arg>
+<arg>${SYSTEM_FRAME_NUMBER}</arg>
+<arg>--subCarrierSpacingCommon</arg>
+<arg>${SUB_CARRIER_SPACING}</arg>
+<arg>--ssb_SubcarrierOffset</arg>
+<arg>${SSB_OFFSET}</arg>
+<arg>--dmrs_TypeA_Position</arg>
+<arg>${DMRS_POSITION}</arg>
+<arg>--pdcch_ConfigSIB1</arg>
+<arg>${PDCCH_CONFIG}</arg>
+<arg>--cellBarred</arg>
+<arg>${CELL_BARRED}</arg>
+<arg>--intraFreqReselection</arg>
+<arg>${INTRA_FREQ}</arg>
+<arg>--spare</arg>
+<arg>${SPARE}</arg>
+<arg>stdout=results/output.log</arg>
+<arg>stderr=results/error.log</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="FAIL" start="2025-03-14T17:30:59.642547" elapsed="0.000854">Variable '${SYSTEM_FRAME_NUMBER}' not found.</status>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${result.rc} == 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.643706" elapsed="0.000068"/>
+</kw>
+<kw name="Log Many" owner="BuiltIn">
+<arg>${result.stdout.splitlines()}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.644123" elapsed="0.000154"/>
+</kw>
+<kw name="Log Many" owner="BuiltIn">
+<arg>${result.stderr.splitlines()}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.644573" elapsed="0.000044"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Test execution completed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.644776" elapsed="0.000024"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Robot Framework report generated.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.644931" elapsed="0.000025"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.645223" elapsed="0.000131"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.645530" elapsed="0.000026"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Robot Framework report generation completed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.645632" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2025-03-14T17:30:59.639517" elapsed="0.006287">Variable '${SYSTEM_FRAME_NUMBER}' not found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Verification of MIB reception completed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-03-14T17:30:59.646575" elapsed="0.000147"/>
+</kw>
+<doc>Test custom MIB reception from DUT RAN to UE simulators.</doc>
+<status status="FAIL" start="2025-03-14T17:30:59.635712" elapsed="0.011532">Variable '${SYSTEM_FRAME_NUMBER}' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-14T17:30:59.542139" elapsed="0.107196"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Other Scenarios" id="s1" pass="0" fail="1" skip="0">Test Other Scenarios</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-14T17:30:59.542493" level="ERROR">Error in file 'C:\Users\Ramesh1\PycharmProjects\PythonProject2\RAN_TEST\Tests\test_other_scenarios.robot' on line 9: Setting variable '${SYSTEM_FRAME_NUMBER} '000001'' failed: Invalid variable name '${SYSTEM_FRAME_NUMBER} '000001''.</msg>
+<msg time="2025-03-14T17:30:59.542997" level="ERROR">Error in file 'C:\Users\Ramesh1\PycharmProjects\PythonProject2\RAN_TEST\Tests\test_other_scenarios.robot' on line 10: Setting variable '${SUB_CARRIER_SPACING} 'scs30or120'' failed: Invalid variable name '${SUB_CARRIER_SPACING} 'scs30or120''.</msg>
+</errors>
+</robot>
